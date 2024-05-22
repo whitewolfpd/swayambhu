@@ -1,0 +1,143 @@
+<div class="our-story text-center top-space">
+  <h2>WE LOOK FORWARD</h2>
+  <p>
+    At Swayambhu Strategies, we combine our technical prowess with creative
+    vision to create content that not only tells stories but also drives
+    engagement and delivers results.<br />
+    Partnering with <strong>Pocket FM</strong>, we are confident in our ability
+    to produce promotional videos that will enhance brand visibility and
+    audience engagement on a large scale.<br />
+    <br />
+    <i>For additional information you can reach out via below options.</i>
+  </p>
+</div>
+
+<div class="top-space">
+  <section class="container mt-5">
+    <!--Contact heading-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-sm-12 mb-4 col-md-5 top-space">
+        <!--Form with header-->
+        <div class="card border-primary rounded-0">
+          <div class="card-header p-0">
+            <div class="bg-light text-black text-center py-2">
+              <h3><i class="fa fa-envelope"></i> Write to us:</h3>
+              <p class="m-0">
+                Feel free to contact us if you have any question or need help.
+              </p>
+            </div>
+          </div>
+          <div class="card-body p-3">
+            <div class="form-group">
+              <label> Your name </label>
+              <div class="input-group">
+                <input
+                  [(ngModel)]="enquiry.fullName"
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="inlineFormInputGroupUsername"
+                  placeholder="Your name"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Your email</label>
+              <div class="input-group mb-2 mb-sm-0">
+                <input
+                  [(ngModel)]="enquiry.email"
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="inlineFormInputGroupUsername"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <div class="input-group mb-2 mb-sm-0">
+                <input
+                  [(ngModel)]="enquiry.subject"
+                  type="text"
+                  name="subject"
+                  class="form-control"
+                  id="inlineFormInputGroupUsername"
+                  placeholder="Subject"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <div class="input-group mb-2 mb-sm-0">
+                <input
+                  [(ngModel)]="enquiry.message"
+                  type="text"
+                  class="form-control"
+                  name="message"
+                  placeholder="Message"
+                />
+              </div>
+            </div>
+            <div class="text-center top-space">
+              <button
+                class="btn btn-primary btn-block rounded-0 py-2"
+                (click)="submitEnquiry()"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+          <div class="alert alert-success" role="alert" *ngIf="showMessage">
+            Enquiry submitted successfully. We will get in touch with you withing 24 hours.
+          </div>
+        </div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-sm-12 col-md-7">
+        <!--Google map-->
+        <div class="mb-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.2324511375728!2d73.7647792751916!3d18.51839488257476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2be61069a56f3%3A0x3787803d04211fe3!2sNyati%20Equatorial%20phase%202!5e0!3m2!1sen!2sin!4v1716319819577!5m2!1sen!2sin"
+            width="100%"
+            height="450"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+        <!--Buttons-->
+        <div class="row text-center">
+          <div class="col-md-4">
+            <a
+              class="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"
+              ><i class="fa fa-map-marker"></i
+            ></a>
+            <p>Nyati Equatorial Phase 2, Bavdhan, Pune<br /></p>
+          </div>
+
+          <div class="col-md-4">
+            <a
+              class="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"
+              ><i class="fa fa-phone"></i
+            ></a>
+            <p>+91- 9763978086</p>
+          </div>
+          <div class="col-md-4">
+            <a
+              class="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block"
+              ><i class="fa fa-envelope"></i
+            ></a>
+            <p>{{ email }}</p>
+          </div>
+        </div>
+      </div>
+      <!--Grid column-->
+    </div>
+  </section>
+</div>
