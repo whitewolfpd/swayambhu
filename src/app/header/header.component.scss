@@ -1,0 +1,62 @@
+.hero-section {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 50px;
+}
+
+.logo {
+  width: 40px;
+  padding: 5px 5px;
+}
+
+.about-us-section,
+.services-overview,
+.clients-partners,
+.testimonials,
+.contact-info {
+  margin: 20px 0;
+}
+
+.services-overview .service {
+  display: inline-block;
+  width: 22%;
+  text-align: center;
+  margin: 10px;
+}
+
+.clients-partners img {
+  width: 100px;
+  margin: 10px;
+}
+
+.testimonials blockquote {
+  border-left: 5px solid #ccc;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.contact-info form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-info form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.contact-info form input,
+.contact-info form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.contact-info form button {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
